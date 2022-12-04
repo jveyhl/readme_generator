@@ -74,7 +74,7 @@ function generateMarkdown(data) {
   * [Contributors](#contributors)
   * [Test](#test)
   ## Installations (Dependencies) 
-  To install dependencies, run these commands:
+  Use the following commands to install dependencies:
   \`\`\`
   ${data.dependencies}
   \`\`\`
@@ -83,9 +83,9 @@ function generateMarkdown(data) {
   ${renderSection(data.license)}
   ## Contributors 
   ${data.contributors}
-  Contact me at ${data.email}
+  Contact: ${data.email}
   ## Tests 
-  To run tests, run these commands:
+  Use the following commands to run tests:
   \`\`\`
   ${data.test}
   \`\`\`
