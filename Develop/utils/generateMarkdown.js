@@ -6,27 +6,27 @@ function renderLicenseBadge(license) {
   switch (license) {
     case "MIT":
       badgeSource =
-        "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
+        "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
       break;
     case "APACHE 2.0":
       badgeSource =
-        "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]";
+        "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
       break;
     case "Boost 1.0":
       badgeSource =
-        "[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)]";
+        "[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)";
       break;
     case "GNU GPL v3":
       badgeSource =
-        "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]";
+        "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
       break;
     case "BSD 2-Clause":
       badgeSource =
-        "[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)]";
+        "[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)";
       break;
     case "BSD 3-Clause":
       badgeSource =
-        "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)]";
+        "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)";
       break;
     case "None":
       badgeSource = "";
