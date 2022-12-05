@@ -35,8 +35,8 @@ const questions = [
   {
     type: "input",
     name: "dependencies",
-    message: "Are there any dependencies to install?",
-    default: "No",
+    message: "Please enter the commands to install dependencies",
+    default: "npm i",
   },
   {
     type: "input",
@@ -58,7 +58,12 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  return fs.writeFile(path.join(process.cwd(), fileName), data);
+  return fs.writeFile(path.join(process.cwd(), fileName), data, function(error) {
+    if(error) {
+        throw error;
+    }
+    console.log("README file generated!")
+  });
 }
 
 // TODO: Create a function to initialize app

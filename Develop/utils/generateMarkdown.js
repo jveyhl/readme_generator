@@ -39,7 +39,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== "None") {
-    return `\n* [License](#license)\n`;
+    return `* [License](#license)`;
   }
   return "";
 }
@@ -48,15 +48,12 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== "None") {
-    return (
-      `## License 
+    return `## License 
       Copyright © ${license}. All rights reserved. 
       
-      Licensed under the ${license} license.`
-
-    )
+      Licensed under the ${license} license.`;
   }
-  return ''
+  return "";
 }
 
 // TODO: Create a function to generate markdown for README
@@ -65,30 +62,36 @@ function generateMarkdown(data) {
   ${renderLicenseBadge(data.license)}
   ## Github URL 
   [${data.github}](https://github.com/${data.github}/)
+
   ## Description 
   ${data.description}
+
   ## Table of Contents 
-  * [Installations](#dependencies)
+  * [Installations](#installations)
   * [Usage](#usage)
   ${renderLicenseLink(data.license)}
   * [Contributors](#contributors)
-  * [Test](#test)
-  ## Installations (Dependencies) 
+  * [Contact](#contact)
+  * [Tests](#tests)
+  
+  ## Installations
   Use the following commands to install dependencies:
-  \`\`\`
   ${data.dependencies}
-  \`\`\`
-  ## Usage 
+
+  ## Usage
   ${data.usage}
+
   ${renderLicenseSection(data.license)}
+
   ## Contributors 
   ${data.contributors}
-  Contact: ${data.email}
+
+  ## Contact 
+  ${data.email}
+
   ## Tests 
   Use the following commands to run tests:
-  \`\`\`
   ${data.test}
-  \`\`\`
 `;
 }
 
