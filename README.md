@@ -15,17 +15,17 @@ A command-line application that dynamically generates a professional README.md f
 
 ## Installation
 
-N/A
+Ensure that you have Node.js and npm installed. Download the "Develop" folder in this repository.
 
 ## Screenshots
 
-The following images show the web application's appearance and functionality:
+The following image shows the application's appearance and functionality:
 
-![Alt text](/assets/images/demo.png)
+![Alt text](/Develop/images/screenshot.png)
 
 ## Deployed Application
 
-
+N/A
 
 ## Usage
 
