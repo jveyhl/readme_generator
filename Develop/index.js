@@ -83,8 +83,6 @@ function init() {
   inquirer.prompt(questions)
   .then((response) => {
     console.log("Generating README file...");
-    // Compare comment to code below...any difference?
-    // writeToFile("./demo/README.md", generateMarkdown({...response}));
     writeToFile("./demo/README.md", generateMarkdown(response));
   });
 }
