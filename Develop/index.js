@@ -30,7 +30,15 @@ const questions = [
     type: "list",
     name: "license",
     message: "Which license does your project use?",
-    choices: ["MIT", "APACHE 2.0", "Boost 1.0", "GNU GPL v3", "BSD 2-Clause", "BSD 3-Clause", "None"],
+    choices: [
+      "MIT",
+      "APACHE 2.0",
+      "Boost 1.0",
+      "GNU GPL v3",
+      "BSD 2-Clause",
+      "BSD 3-Clause",
+      "None",
+    ],
   },
   {
     type: "input",
@@ -58,18 +66,25 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  return fs.writeFile(path.join(process.cwd(), fileName), data, function(error) {
-    if(error) {
+  return fs.writeFile(
+    path.join(process.cwd(), fileName),
+    data,
+    function (error) {
+      if (error) {
         throw error;
+      }
+      console.log("README file generated!");
     }
-    console.log("README file generated!")
-  });
+  );
 }
 
 // TODO: Create a function to initialize app
 function init() {
-  inquirer.prompt(questions).then((response) => {
+  inquirer.prompt(questions)
+  .then((response) => {
     console.log("Generating README file...");
+    // Compare comment to code below...any difference?
+    // writeToFile("./demo/README.md", generateMarkdown({...response}));
     writeToFile("./demo/README.md", generateMarkdown(response));
   });
 }

@@ -1,13 +1,13 @@
-# Server-Side APIs Challenge: Weather Dashboard
+# Node.js Challenge: Professional README Generator
 
 ## Description
 
-A weather dashboard that allows the user to see the weather outlook for multiple cities. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+A command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
 
 ## Table of Contents
 
 - [Installation](#installation)
-- [Mock-Up](#mock-up)
+- [Screenshots](#screenshots)
 - [Deployed Application](#deployed-application)
 - [Usage](#usage)
 - [Credits](#credits)
@@ -17,27 +17,26 @@ A weather dashboard that allows the user to see the weather outlook for multiple
 
 N/A
 
-## Mock-Up
+## Screenshots
 
-The following image shows the web application's appearance and functionality:
+The following images show the web application's appearance and functionality:
 
 ![Alt text](/assets/images/demo.png)
 
 ## Deployed Application
 
-https://jveyhl.github.io/weather_dashboard/
+
 
 ## Usage
 
-- Enter a city name into the search bar and click on the search icon.
-- Enter additional city names to add them to your search history list.
-- Click on the city names in the search history list to load that city's weather data.
-- Click on the "Clear History" button to clear your search history list.
-
+- Open the terminal and cd into the directory that contains index.js and the utils directory.
+- Enter "node index" into the terminal.
+- Answer the questions when prompted.
+- A README.md file will be generated in the demo directory.
 
 ## Credits
 
-N/A
+Starter code provided by Xandromus (Xander Rapstine) and gachoi06 (Grace Choi).
 
 ## License
 

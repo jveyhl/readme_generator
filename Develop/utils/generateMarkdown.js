@@ -71,10 +71,10 @@ function generateMarkdown(data) {
   ## Table of Contents 
   * [Installations](#installations)
   * [Usage](#usage)
-  ${renderLicenseLink(data.license)}
   * [Contributors](#contributors)
   * [Contact](#contact)
   * [Tests](#tests)
+  ${renderLicenseLink(data.license)}
   
   ## Installations
   Use the following commands to install dependencies:
