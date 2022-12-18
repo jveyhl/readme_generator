@@ -6,7 +6,7 @@
   [jveyhl](https://github.com/jveyhl/)
 
   ## Description 
-  Generates readme files
+  "Generates readme files"
 
   ## Table of Contents 
   * [Installations](#installations)
@@ -21,10 +21,10 @@
   npm i
 
   ## Usage
-  Launch the app and answer the questions
+  "Launch the app and answer the questions"
 
   ## Contributors 
-  Xandromous and gachoi06
+  "Xandromous and gachoi06"
 
   ## Contact 
   test@gmail.com
